@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&family=Outfit:wght@300;400;600&family=Poppins&display=swap");
+
+:root {
+  --veryDarkBlueMain: hsl(217, 54%, 11%);
+  --veryDarkBlueSecondary: hsl(216, 50%, 16%);
+  --veryDarkBlueLine: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --softBlue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --black: rgb(3, 3, 3);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: var(--veryDarkBlueMain);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  position: absolute;
+  background: var(--veryDarkBlueSecondary);
+  top: 15rem;
+  border-radius: 2rem;
+  height: 60rem;
+  width: 35rem;
+  box-shadow: 0 0 5rem 1rem var(--black);
+  display: flex;
+  flex-direction: column;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 29rem;
+  height: 29rem;
+  background-color: var(--cyan);
+  border-radius: 1.2rem;
+}
+
+.image__main {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1rem;
+  z-index: 1;
+}
+
+.img_eye {
+  position: absolute;
+}
+
+.main_heading {
+  color: var(--white);
+  font-size: 2.8rem;
+  margin: 2rem 3rem;
+}
+
+.paragraph,
+.name {
+  color: var(--softBlue);
+  font-size: 1.8rem;
+  margin-left: 3rem;
+}
+
+.price__time,
+.info {
+  margin: 2rem 3.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+.price {
+  color: var(--cyan);
+}
+.time,
+a {
+  color: var(--softBlue);
+  text-decoration: none;
+}
+
+.creator {
+  border-radius: 3rem;
+  width: 5.5rem;
+  border: solid 1px var(--white);
+}
+
+hr {
+  width: 80%;
+  margin: auto;
+  color: var(--softBlue);
+}
+
+.span__text,
+.attribution {
+  color: var(--white);
+  justify-self: center;
+  text-align: center;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  font-size: 2rem;
+}
+
+/* Hover animations  */
+
+.main_heading,
+.span__text,
+.image__main {
+  transition: 0.5s ease-in-out;
+}
+
+.main_heading:hover,
+.span__text:hover,
+.image__main:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.image__main:hover {
+  opacity: 0.4;
+}
+
+/* Phone size laout */
+
+@media screen and (max-width: 390px) {
+  .main {
+    top: 7rem;
+  }
+}
