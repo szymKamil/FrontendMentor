@@ -40,7 +40,7 @@ body {
   flex-direction: column;
 }
 
-.images {
+.image__background {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,6 +59,7 @@ body {
   margin-right: auto;
   border-radius: 1rem;
   z-index: 1;
+  overflow: hidden;
 }
 
 .img_eye {
@@ -90,6 +91,11 @@ body {
 .price {
   color: var(--cyan);
 }
+
+.clock_icon {
+  margin-right: 0.5rem;
+}
+
 .time,
 a {
   color: var(--softBlue);
