@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --paleBlue: hsl(225, 100%, 94%);
+  --brightBlue: hsl(245, 75%, 52%);
+  --veryPaleBlue: hsl(225, 100%, 98%);
+  --desaturatedBlue: hsl(224, 23%, 55%);
+  --darkBlue: hsl(223, 47%, 23%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  background: url("images/pattern-background-desktop.svg") no-repeat
+    var(--paleBlue);
+  background-position: 50% 20%;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  position: absolute;
+  background: white;
+  top: 13rem;
+  border-radius: 2rem;
+  height: 65rem;
+  width: 45rem;
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image__hero {
+  border-radius: 2rem 2rem 0 0;
+}
+
+.main__haeder {
+  margin: 2rem;
+  font-size: 2.8rem;
+  color: var(--darkBlue);
+  font-weight: 900;
+}
+
+.order__text {
+  font-size: 1.6rem;
+  margin: 0 5rem 0 5rem;
+  text-align: center;
+  color: var(--desaturatedBlue);
+  line-height: 2.4rem;
+  font-weight: 500;
+}
+
+.price__container {
+  background: var(--veryPaleBlue);
+  display: flex;
+  margin: 2rem;
+  justify-content: space-evenly;
+  width: 73%;
+  height: 8.5rem;
+  border-radius: 2rem;
+  align-items: center;
+}
+
+.icon__music {
+  height: 60%;
+  margin-left: -5rem;
+}
+
+.price__container2 {
+  margin-left: -4.8rem;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+}
+
+.annual__plan,
+.change__plan {
+  color: var(--darkBlue);
+  font-weight: 700;
+}
+
+.price {
+  color: var(--desaturatedBlue);
+}
+
+.change__plan {
+  color: var(--brightBlue);
+  font-size: 1.4em;
+  margin-right: -3rem;
+}
+
+.main__button__accept,
+.second__buttton__cancel {
+  margin: 1rem;
+  width: 32rem;
+  height: 4.4rem;
+  border-radius: 0.9rem;
+  border: none;
+  background-color: none;
+  cursor: pointer;
+}
+
+.main__button__accept {
+  background-color: var(--brightBlue);
+  color: var(--paleBlue);
+  font-weight: 700;
+  font-size: 1.36rem;
+  box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.7);
+}
+
+.second__buttton__cancel {
+  background-color: inherit;
+  color: var(--desaturatedBlue);
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.main__button__accept:active {
+  transform: translateY(2px);
+}
+
+.second__buttton__cancel:active { 
+  background: #070ef8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #070ef8, #e11e40); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #070ef8, #e11e40); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 375px) {
+  .main {
+    width: 35rem;
+    top: 8rem;
+    height: 58.7rem;
+  }
+
+  .image__hero {
+    height: 30%;
+    width: 35rem;
+  }
+
+  .attribution {
+  }
+}
