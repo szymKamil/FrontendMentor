@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="”description”" content="Intro component with sign up form" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <header class="header__left">
+      <h1 class="heading">Learn to code by watching others</h1>
+      <p class="header__paragraph">
+        See how experienced developers solve problems in real-time. Watching
+        scripted tutorials is great, but understanding how developers think is
+        invaluable.
+      </p>
+    </header>
+    <main class="main__form">
+      <button class="btn_trial_accept">
+        <b>Try it free 7 days</b> then $20/mo. thereafter
+      </button>
+      <div class="div__form">
+        <form class="form">
+          <div>
+            <input
+              type="text"
+              class="form_input form_name"
+              placeholder="First Name"
+            />
+            <p class="error__msg">First Name cannot be empty</p>
+          </div>
+          <div>
+          <input
+            type="text"
+            class="form_input form_second_name"
+            placeholder="Last Name"
+          />
+          <p class="error__msg">Last Name cannot be empty</p>
+        </div>
+        <div>
+          <input
+            type="email"
+            class="form_input form_email"
+            placeholder="Email Address"
+          />
+          <p class="error__msg">Looks like this is not an email</p>
+        </div>
+        <div>
+          <input
+            type="password"
+            class="form_input form_password"
+            placeholder="Password"
+          />
+          <p class="error__msg">Password cannot be empty</p>
+        </div>
+        <div>
+          <input
+            type="submit"
+            class="btn_sumbit"
+            value="CLAIM YOUR FREE TRIAL"
+          />
+        </form>
+        <p class="terms_services">
+          By clicking the button, you are agreeing to our
+          <a class="t_s_link" href="https://www.google.com" target="_blank"
+            >Terms and Services</a
+          >
+        </p>
+      </div>
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Kamil Szymański</a>.
+      </p>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
+
